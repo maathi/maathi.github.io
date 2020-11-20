@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h4>hey, I'm mathi 🤗, a software developer. 
+        <br></br>
+        I have a tremendous passion for solving real world problems
+        through technology. I find great joy in creating software
+        that has the potential to make people's lifes somehow easier.
+      </h4>
+
+      <h2>
+         🚀 a list of my go-to technologies :
+      </h2>
+
+      <h2>
+         💻 some projects i have been working on lately :
+      </h2>
+
+      <h2>📞 contact me :</h2>
     </div>
   );
 }
