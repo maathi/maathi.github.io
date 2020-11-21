@@ -5,7 +5,7 @@ form {
 
 input,
 textarea {
-  border: 0px;
+  border: none;
   width: 60%;
   margin: 14px auto 14px auto;
   border-radius: 5px;

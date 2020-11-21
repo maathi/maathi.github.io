@@ -1,6 +1,5 @@
 import React, { useState } from "react"
-import '../style/contact.css'
-
+import "../style/contact.css"
 
 function Contact() {
   let [email, setEmail] = useState("")
@@ -8,14 +7,20 @@ function Contact() {
   let [body, setBody] = useState("")
 
   let handleSubmit = (e) => {
-      e.preventDefault()
-      console.log(email, subject, body)
+    e.preventDefault()
+    console.log(email, subject, body)
   }
 
   return (
     <div>
-      <h2>📞 Contact me :</h2>
-      <form onSubmit={(e)=> {handleSubmit(e)}}>
+      <h2>📞 Contact me</h2>
+      <form
+        onSubmit={(e) => {
+          handleSubmit(e)
+        }}
+      >
+        <h4>📱 Phone </h4>
+        <h4>✉ mail</h4>
         <input
           placeholder="Your email"
           value={email}
