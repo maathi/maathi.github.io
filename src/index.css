@@ -1,6 +1,6 @@
 body {
-  margin: auto 10%;
-  background-color: black;
+  margin: 24px 10%;
+  background-color: rgb(1, 0, 53);
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -16,4 +16,80 @@ code {
 
 h2 {
   text-align: center;
+}
+
+.intro {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.intro > img {
+  border-radius: 50%;
+  /* border: 0px solid rgb(255, 0, 0); */
+  /* width: 500px; */
+  margin-right: 20px;
+  width: 20%;
+  box-shadow: 0px 0px 34px 0 rgba(255, 0, 0, 1);
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.logos > img {
+  width: 300px;
+}
+
+.prjs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.prj {
+  width: 300px;
+  text-align: center;
+}
+
+.prj > b {
+  margin-top: 54px;
+  padding-top: 34px;
+  color: yellow;
+  /* text-shadow: 0px 0px 30px #ff0000; */
+}
+
+.card {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: 0px 0px 18px 0 rgba(255, 0, 0, 0.5);
+  transition: 0.3s;
+  border-radius: 5px;
+  transition: 0.6s;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 74px 0 rgba(255, 0, 0, 0.9);
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.card > img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  /* margin: -75px auto; */
+}
+
+.octocat {
+  text-shadow: 0px 0px 6px rgba(255, 0, 0, 1);
+  transition: 0.6s;
+}
+
+.octocat:hover {
+  text-shadow: 0px 0px 18px rgba(255, 0, 0, 1);
+  transition: 00.6s;
+  cursor: pointer;
 }

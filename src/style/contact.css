@@ -1,0 +1,53 @@
+form {
+  margin: 0 auto;
+  text-align: center;
+}
+
+input,
+textarea {
+  border: 0px;
+  width: 60%;
+  margin: 14px auto 14px auto;
+  border-radius: 5px;
+}
+
+input {
+  text-align: center;
+  height: 1.5rem;
+  transition: 00.6s;
+}
+
+textarea {
+  height: 3rem;
+  /* padding: 10px 10px; */
+  /* font-family: cursive;*/
+  font-size: 16px;
+  font-family: inherit;
+  resize: vertical;
+  text-indent: 8px;
+  padding-top: 14px;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  width: 20%;
+  height: 1.5rem;
+  margin: 14px auto 14px auto;
+  /* transition: 0.6s; */
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0px 0px 34px 0 rgba(255, 0, 0, 0.9);
+  transition: 0.6s;
+}
+
+button:hover {
+  box-shadow: 0px 0px 24px rgba(255, 0, 0, 0.9);
+  /* transition: 0.6s; */
+}
+
+::placeholder {
+  color: gray;
+}

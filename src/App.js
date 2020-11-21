@@ -1,26 +1,68 @@
-import './App.css';
+import "./App.css"
+import pic from "./pic.png"
+import react from "./react.png"
+import node from "./node.png"
+import graphql from "./graphql.png"
+import express from "./express.png"
+import mongo from "./mongodb.png"
+import brba from "./brba.jpg"
+import Contact from "./components/contact"
 
 function App() {
   return (
     <div>
-      <h4>hey, I'm mathi 🤗, a software developer. 
-        <br></br>
-        I have a tremendous passion for solving real world problems
-        through technology. I find great joy in creating software
-        that has the potential to make people's lifes somehow easier.
-      </h4>
+      <div className="intro">
+        <img src={pic}></img>
 
-      <h2>
-         🚀 a list of my go-to technologies :
-      </h2>
+        <h4>
+          Hey, I'm mathi 🤗, a software developer.
+          <br></br>I have a tremendous passion for solving real world problems
+          through technology. I find great joy in creating software that has the
+          potential to make people's lives somehow easier.
+        </h4>
+      </div>
 
-      <h2>
-         💻 some projects i have been working on lately :
-      </h2>
+      <div className="techs">
+        <h2>🚀 Some of my go-to technologies :</h2>
+        <div className="logos">
+          <img src={react}></img>
+          <img src={node}></img>
+          <img src={graphql}></img>
+          <img src={express}></img>
+          <img src={mongo}></img>
+        </div>
+      </div>
 
-      <h2>📞 contact me :</h2>
+      <div className="projects">
+        <h2>💻 Small projects i have been working on lately :</h2>
+        <div className="prjs">
+          <div className="prj">
+            <div className="card">
+              <img src={brba} alt="Avatar"></img>
+            </div>
+            <b>brba cast</b>
+          </div>
+          <div className="prj">
+            <div className="card">
+              <img src={brba} alt="Avatar"></img>
+            </div>
+            <b>brba cast</b>
+          </div>
+          <div className="prj">
+            <div className="card">
+              <img src={brba} alt="Avatar"></img>
+            </div>
+            <b>brba cast</b>
+            <a>
+              <p className="octocat">🐙🐱</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <Contact></Contact>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
