@@ -36,7 +36,7 @@ function Projects() {
       <div className="prjs">
         {prjs.map((p) => (
           <div className="prj">
-            <div className="card">
+            <div className="wrapper">
               <img src={p.img} alt="Avatar"></img>
             </div>
             <b>{p.title}</b>
