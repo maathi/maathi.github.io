@@ -12,7 +12,7 @@ function Contact() {
   }
 
   return (
-    <div>
+    <div className="contact">
       <h2>📞 Contact me</h2>
       <form
         onSubmit={(e) => {

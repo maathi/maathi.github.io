@@ -1,0 +1,13 @@
+.techs {
+  margin: 4rem auto;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.logos > img {
+  width: 300px;
+}

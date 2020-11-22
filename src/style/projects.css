@@ -1,3 +1,7 @@
+.projects {
+  margin: 4rem auto;
+}
+
 .prjs {
   display: flex;
   flex-wrap: wrap;
