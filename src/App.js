@@ -5,9 +5,9 @@ import node from "./node.png"
 import graphql from "./graphql.png"
 import express from "./express.png"
 import mongo from "./mongodb.png"
-import brba from "./brba.jpg"
 import Contact from "./components/contact"
 import Footer from "./components/footer"
+import Projects from "./components/projects"
 
 function App() {
   return (
@@ -16,12 +16,12 @@ function App() {
         <div className="intro">
           <img src={pic}></img>
 
-          <h4>
+          <p>
             Hey, I'm mathi 🤗, a software developer.
             <br></br>I have a tremendous passion for solving real world problems
             through technology. I find great joy in creating software that has
             the potential to make people's lives somehow easier.
-          </h4>
+          </p>
         </div>
 
         <div className="techs">
@@ -35,32 +35,7 @@ function App() {
           </div>
         </div>
 
-        <div className="projects">
-          <h2>💻 Small projects i have been working on lately</h2>
-          <div className="prjs">
-            <div className="prj">
-              <div className="card">
-                <img src={brba} alt="Avatar"></img>
-              </div>
-              <b>brba cast</b>
-            </div>
-            <div className="prj">
-              <div className="card">
-                <img src={brba} alt="Avatar"></img>
-              </div>
-              <b>brba cast</b>
-            </div>
-            <div className="prj">
-              <div className="card">
-                <img src={brba} alt="Avatar"></img>
-              </div>
-              <b>brba cast</b>
-              <a>
-                <p className="octocat">🐙🐱</p>
-              </a>
-            </div>
-          </div>
-        </div>
+        <Projects></Projects>
         <Contact></Contact>
       </div>
       <Footer></Footer>
