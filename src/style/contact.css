@@ -51,3 +51,27 @@ button:hover {
 ::placeholder {
   color: gray;
 }
+
+@media screen and (max-width: 900px) {
+  input,
+  textarea {
+    width: 90%;
+  }
+
+  button {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  input,
+  textarea {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  button {
+    width: 100%;
+  }
+}

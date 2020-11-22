@@ -1,32 +1,55 @@
 import "../style/projects.css"
 import brba from "../brba.jpg"
+import { FaGithub } from "react-icons/fa"
 
 function Projects() {
+  let prjs = [
+    {
+      title: "BrBa cast",
+      img: brba,
+      website: "",
+      github: "brba",
+    },
+    {
+      title: "BrBa cast",
+      img: brba,
+      website: "",
+      github: "",
+    },
+    {
+      title: "BrBa cast",
+      img: brba,
+      website: "",
+      github: "",
+    },
+    {
+      title: "BrBa cast",
+      img: brba,
+      website: "",
+      github: "",
+    },
+  ]
+
   return (
     <div className="projects">
       <h2>💻 Small projects i have been working on lately</h2>
       <div className="prjs">
-        <div className="prj">
-          <div className="card">
-            <img src={brba} alt="Avatar"></img>
+        {prjs.map((p) => (
+          <div className="prj">
+            <div className="card">
+              <img src={p.img} alt="Avatar"></img>
+            </div>
+            <b>{p.title}</b>
+            <a>
+              <a
+                className="github-icon"
+                href={"https://github.com/maathi/" + p.github}
+              >
+                <FaGithub />
+              </a>
+            </a>
           </div>
-          <b>brba cast</b>
-        </div>
-        <div className="prj">
-          <div className="card">
-            <img src={brba} alt="Avatar"></img>
-          </div>
-          <b>brba cast</b>
-        </div>
-        <div className="prj">
-          <div className="card">
-            <img src={brba} alt="Avatar"></img>
-          </div>
-          <b>brba cast</b>
-          <a>
-            <p className="octocat">🐙🐱</p>
-          </a>
-        </div>
+        ))}
       </div>
     </div>
   )
