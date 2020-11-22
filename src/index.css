@@ -10,7 +10,7 @@ body {
 }
 
 .main-content {
-  margin: 24px 10%;
+  margin: 3rem 10%;
 }
 
 code {
@@ -22,27 +22,6 @@ h2 {
   text-align: center;
 }
 
-.intro {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 34px;
-}
-
-.intro > p {
-  font-size: 24px;
-}
-
-.intro > img {
-  border-radius: 50%;
-  width: 20%;
-  height: auto;
-  box-shadow: 0px 0px 34px 0 rgba(255, 0, 0, 1);
-}
-.intro > h4 {
-  width: 70%;
-}
-
 .logos {
   display: flex;
   flex-wrap: wrap;
@@ -51,31 +30,4 @@ h2 {
 }
 .logos > img {
   width: 300px;
-}
-
-@media screen and (max-width: 900px) {
-  .intro {
-    display: block;
-    text-align: center;
-  }
-
-  .intro > img {
-    width: 30%;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .intro > img {
-    width: 40%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .intro > img {
-    width: 50%;
-  }
-
-  .intro > p {
-    font-size: 20px;
-  }
 }

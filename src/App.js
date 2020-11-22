@@ -5,6 +5,8 @@ import node from "./node.png"
 import graphql from "./graphql.png"
 import express from "./express.png"
 import mongo from "./mongodb.png"
+
+import Intro from "./components/intro"
 import Contact from "./components/contact"
 import Footer from "./components/footer"
 import Projects from "./components/projects"
@@ -13,17 +15,7 @@ function App() {
   return (
     <div>
       <div className="main-content">
-        <div className="intro">
-          <img src={pic}></img>
-
-          <p>
-            Hey, I'm mathi 🤗, a software developer.
-            <br></br>I have a tremendous passion for solving real world problems
-            through technology. I find great joy in creating software that has
-            the potential to make people's lives somehow easier.
-          </p>
-        </div>
-
+        <Intro></Intro>
         <div className="techs">
           <h2>🚀 Some of my go-to technologies</h2>
           <div className="logos">
