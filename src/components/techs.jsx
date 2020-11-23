@@ -5,10 +5,12 @@ import graphql from "../graphql.png"
 import express from "../express.png"
 import mongo from "../mongodb.png"
 
+import { FaRocket } from "react-icons/fa"
+
 function Techs() {
   return (
     <div className="techs">
-      <h2>🚀 Some of my go-to technologies</h2>
+      <h2>Some of my go-to technologies</h2>
       <div className="logos">
         <img src={react} alt="React"></img>
         <img src={node}></img>

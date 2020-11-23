@@ -9,7 +9,6 @@ form {
 
 input,
 textarea {
-  border: none;
   width: 60%;
   margin: 14px auto 14px auto;
   border-radius: 5px;
@@ -32,29 +31,48 @@ textarea {
   padding-top: 14px;
 }
 
-button {
-  display: block;
-  cursor: pointer;
-  width: 20%;
-  height: 2rem;
-  margin: 14px auto 14px auto;
-  /* transition: 0.6s; */
-}
-
 input:focus,
 textarea:focus {
   box-shadow: 0px 0px 34px 0 rgba(255, 0, 0, 0.9);
   transition: 0.4s;
 }
 
-button:hover {
-  box-shadow: 0px 0px 24px rgba(255, 0, 0, 0.9);
-  /* transition: 0.6s; */
-}
-
 ::placeholder {
   color: gray;
 }
+
+.error {
+  border: 2.5px solid red;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  display: block;
+  width: 20%;
+  height: 2rem;
+  margin: 14px auto 14px auto;
+  /* transition: 0.6s; */
+}
+
+button.enabled {
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 0px 0px 14px 0 rgba(255, 0, 0, 0.9);
+}
+
+button.disabled {
+  cursor: not-allowed;
+  background-color: grey;
+}
+button.enabled:hover {
+  color: red;
+  box-shadow: 0px 0px 24px rgba(255, 0, 0, 0.9);
+  background-color: white;
+  /* transition: 0.6s; */
+}
+/********************* media  **************************/
 
 @media screen and (max-width: 900px) {
   input,

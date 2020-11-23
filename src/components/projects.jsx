@@ -32,7 +32,7 @@ function Projects() {
 
   return (
     <div className="projects">
-      <h2>💻 Small projects i have been working on lately</h2>
+      <h2>Small projects i have been working on lately</h2>
       <div className="prjs">
         {prjs.map((p) => (
           <div className="prj">
