@@ -1,5 +1,5 @@
 import "../style/footer.css"
-import { FaTwitter, FaGithubAlt } from "react-icons/fa"
+import { FaTwitter, FaGithubAlt, FaYoutube } from "react-icons/fa"
 import { MdMail } from "react-icons/md"
 
 function Footer() {
@@ -10,18 +10,35 @@ function Footer() {
       </p>
       <ul className="icons">
         <li>
-          <a href="https://twitter.com/kefimochi" className="twitter">
+          <a
+            href="https://twitter.com/kitsutsukix"
+            target="_blank"
+            className="twitter"
+          >
             <FaTwitter />
           </a>
         </li>
         <li>
-          <a href="https://github.com/Kefimochi" className="github">
+          <a
+            href="https://github.com/maathi"
+            target="_blank"
+            className="github"
+          >
             <FaGithubAlt />
           </a>
         </li>
         <li>
-          <a href="mailto:kate.efimova0@gmail.com" className="mail">
+          <a href="mailto:mahdi221b@gmail.com" target="_blank" className="mail">
             <MdMail />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            target="_blank"
+            className="youtube"
+          >
+            <FaYoutube />
           </a>
         </li>
       </ul>

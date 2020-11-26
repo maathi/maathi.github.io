@@ -18,13 +18,10 @@ class Contact extends Form {
 
   bool = false
 
-  getCalled = () => {
-    return this.state.data.message
-  }
-
   render() {
     return (
       <div className="contact">
+        <h2>Contact</h2>
         <form>
           <input
             className={this.state.errors["email"] ? "error" : ""}

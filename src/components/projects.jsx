@@ -1,49 +1,52 @@
 import "../style/projects.css"
 import brba from "../brba.jpg"
+import portfolio from "../portfolio.jpg"
+import arch from "../configs.png"
 import { FaGithub } from "react-icons/fa"
 
 function Projects() {
   let prjs = [
     {
-      title: "BrBa cast",
+      title: "Br Ba cast",
       img: brba,
-      website: "",
+      website: "https://heisenberg-and-friends.herokuapp.com",
       github: "brba",
+      desc: "a samll app using breakingbadapi & React",
     },
     {
-      title: "BrBa cast",
-      img: brba,
-      website: "",
-      github: "",
+      title: "My portfolio",
+      img: portfolio,
+      website: "#",
+      github: "portfolio",
+      desc: "this one :P",
     },
     {
-      title: "BrBa cast",
-      img: brba,
-      website: "",
-      github: "",
-    },
-    {
-      title: "BrBa cast",
-      img: brba,
-      website: "",
-      github: "",
+      title: "My Archlinux dot files",
+      img: arch,
+      website: "https://www.github.com/maathi/cute-dots",
+      github: "cute-dots",
+      desc: "My archlinux configuration",
     },
   ]
 
   return (
     <div className="projects">
-      <h2>Small projects i have been working on lately</h2>
+      <h2>Small projects i'm currently working on</h2>
       <div className="prjs">
         {prjs.map((p) => (
-          <div className="prj">
+          <div key={p} className="prj">
             <div className="wrapper">
-              <img src={p.img} alt="Avatar"></img>
+              <a href={p.website} target="_blank">
+                <img src={p.img} alt="Avatar"></img>
+              </a>
             </div>
             <b>{p.title}</b>
+            <p>{p.desc}</p>
             <a>
               <a
                 className="github-icon"
                 href={"https://github.com/maathi/" + p.github}
+                target="_blank"
               >
                 <FaGithub />
               </a>
