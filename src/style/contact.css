@@ -10,7 +10,7 @@ form {
 input,
 textarea {
   width: 60%;
-  margin: 14px auto 14px auto;
+  margin: 0.5rem auto 0.5rem auto;
   border-radius: 5px;
   transition: 0.4s;
 }
@@ -50,7 +50,7 @@ button {
   display: block;
   width: 20%;
   height: 2rem;
-  margin: 14px auto 14px auto;
+  margin: 0.5rem auto 0.5rem auto;
   /* transition: 0.6s; */
 }
 
@@ -70,11 +70,40 @@ button.enabled:hover {
   background-color: white;
   /* transition: 0.6s; */
 }
+
+.hidden {
+  display: none;
+}
+
+.message {
+  height: 2rem;
+  width: 60%;
+  margin: 1rem auto 0.5rem auto;
+  display: table;
+  font-size: 0.8rem;
+}
+
+.sent {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 5px;
+  background-color: green;
+}
+
+.not-sent {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 5px;
+  background-color: red;
+}
 /********************* media  **************************/
 
 @media screen and (max-width: 900px) {
   input,
-  textarea {
+  textarea,
+  .message {
     width: 90%;
   }
 
@@ -85,7 +114,8 @@ button.enabled:hover {
 
 @media screen and (max-width: 700px) {
   input,
-  textarea {
+  textarea,
+  .message {
     width: 100%;
   }
 }

@@ -1,6 +1,6 @@
-import React, { Component, useState } from "react"
 import "../style/contact.css"
 import { FaPaperPlane } from "react-icons/fa"
+import { GiSandsOfTime } from "react-icons/gi"
 import Form from "./common/form"
 import Joi from "joi-browser"
 
@@ -8,12 +8,32 @@ class Contact extends Form {
   state = {
     data: { email: "", subject: "", message: "" },
     errors: { email: null, subject: null, message: null },
+    sending: false,
+    status: null,
   }
 
   schema = {
     email: Joi.string().email().required(),
     subject: Joi.string().required(),
     message: Joi.string().min(24).required(),
+  }
+
+  handleSubmit = (e) => {
+    e.preventDefault()
+    if (this.validateAll()) return
+    this.send()
+  }
+
+  async send() {
+    this.setState({ sending: true, status: null })
+    const response = await fetch("http://localhost:4000/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(this.state.data), // body data type must match "Content-Type" header
+    })
+    this.setState({ sending: false, status: response.status })
   }
 
   render() {
@@ -40,19 +60,37 @@ class Contact extends Form {
           <textarea
             className={this.state.errors["message"] ? "error" : ""}
             name="message"
-            placeholder="Your message"
+            placeholder="What's on your mind ?"
             value={this.state.data["message"]}
             onChange={this.handleChange}
             onBlur={this.validate}
           ></textarea>
           <button
-            className={this.validateAll() ? "disabled" : "enabled"}
+            className={
+              this.state.sending || this.validateAll() ? "disabled" : "enabled"
+            }
             onClick={this.handleSubmit}
             disabled={this.validateAll()}
           >
-            <FaPaperPlane />
+            {this.state.sending ? <GiSandsOfTime /> : <FaPaperPlane />}
           </button>
         </form>
+
+        <div className="message">
+          <p className={this.state.status === 200 ? "sent" : "hidden"}>
+            message sent successfully!
+          </p>
+
+          <p
+            className={
+              this.state.status && this.state.status !== 200
+                ? "not-sent"
+                : "hidden"
+            }
+          >
+            couldn't send message!
+          </p>
+        </div>
       </div>
     )
   }

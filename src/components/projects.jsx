@@ -31,7 +31,7 @@ function Projects() {
 
   return (
     <div className="projects">
-      <h2>Small projects i'm currently working on</h2>
+      <h2>Small projects i've been working on lately</h2>
       <div className="prjs">
         {prjs.map((p) => (
           <div key={p.title} className="prj">

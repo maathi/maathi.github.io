@@ -28,11 +28,11 @@ class Form extends Component {
     this.setState({ data })
   }
 
-  handleSubmit = (e) => {
-    e.preventDefault()
-    if (this.validateAll()) return
-    else console.log("")
-  }
+  // handleSubmit = (e) => {
+  //   e.preventDefault()
+  //   if (this.validateAll()) return
+  //   else console.log("")
+  // }
 }
 
 export default Form
