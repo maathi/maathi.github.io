@@ -16,8 +16,6 @@ class Contact extends Form {
     message: Joi.string().min(24).required(),
   }
 
-  bool = false
-
   render() {
     return (
       <div className="contact">

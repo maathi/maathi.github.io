@@ -30,7 +30,8 @@ class Form extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault()
-    this.validateAll()
+    if (this.validateAll()) return
+    else console.log("")
   }
 }
 
