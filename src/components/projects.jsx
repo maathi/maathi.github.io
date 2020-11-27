@@ -1,7 +1,7 @@
 import "../style/projects.css"
-import brba from "../brba.jpg"
-import portfolio from "../portfolio.jpg"
-import arch from "../configs.png"
+import brba from "../img/brba.jpg"
+import portfolio from "../img/portfolio.jpg"
+import arch from "../img/configs.png"
 import { FaGithub } from "react-icons/fa"
 
 function Projects() {
@@ -34,22 +34,21 @@ function Projects() {
       <h2>Small projects i'm currently working on</h2>
       <div className="prjs">
         {prjs.map((p) => (
-          <div key={p} className="prj">
+          <div key={p.title} className="prj">
             <div className="wrapper">
-              <a href={p.website} target="_blank">
+              <a href={p.website} target="_blank" rel="noreferrer">
                 <img src={p.img} alt="Avatar"></img>
               </a>
             </div>
             <b>{p.title}</b>
             <p>{p.desc}</p>
-            <a>
-              <a
-                className="github-icon"
-                href={"https://github.com/maathi/" + p.github}
-                target="_blank"
-              >
-                <FaGithub />
-              </a>
+            <a
+              className="github-icon"
+              href={"https://github.com/maathi/" + p.github}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaGithub />
             </a>
           </div>
         ))}

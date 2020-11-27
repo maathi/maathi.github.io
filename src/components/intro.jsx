@@ -1,4 +1,4 @@
-import pic from "../mathi.jpg"
+import pic from "../img/mathi.jpg"
 import "../style/intro.css"
 
 function Intro() {

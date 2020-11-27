@@ -1,11 +1,9 @@
 import "../style/techs.css"
-import react from "../react.png"
-import node from "../node.png"
-import graphql from "../graphql.png"
-import express from "../express.png"
-import mongo from "../mongodb.png"
-
-import { FaRocket } from "react-icons/fa"
+import react from "../img/react.png"
+import node from "../img/node.png"
+import graphql from "../img/graphql.png"
+import express from "../img/express.png"
+import mongo from "../img/mongodb.png"
 
 function Techs() {
   return (
