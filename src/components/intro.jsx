@@ -7,7 +7,7 @@ function Intro() {
       <img src={pic}></img>
 
       <p>
-        Hey, I'm mathi 🤗, a software developer.
+        Hey, I'm mathi, a software developer.
         <br></br>I have a tremendous passion for solving real world problems
         through technology. I find great joy in creating software that has the
         potential to make people's lives somehow easier.

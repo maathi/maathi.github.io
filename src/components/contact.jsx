@@ -42,7 +42,7 @@ class Contact extends Form {
 
   async send() {
     this.setState({ sending: true, status: null })
-    const response = await fetch("http://localhost:4000/", {
+    const response = await fetch("https://facteur.herokuapp.com/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
