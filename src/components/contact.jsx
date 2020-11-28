@@ -31,7 +31,7 @@ class Contact extends Form {
   async visit() {
     const res = await fetch("https://www.cloudflare.com/cdn-cgi/trace")
     const text = await res.text()
-    await fetch("http://facteur.herokuapp.com/visit", {
+    await fetch("https://facteur.herokuapp.com/visit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
