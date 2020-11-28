@@ -11,10 +11,10 @@ function Techs() {
       <h2>Some of my go-to technologies</h2>
       <div className="logos">
         <img src={react} alt="React"></img>
-        <img src={node}></img>
-        <img src={graphql}></img>
-        <img src={express}></img>
-        <img src={mongo}></img>
+        <img src={node} alt="node"></img>
+        <img src={graphql} alt="graphql"></img>
+        <img src={express} alt="express"></img>
+        <img src={mongo} alt="mongodb"></img>
       </div>
     </div>
   )

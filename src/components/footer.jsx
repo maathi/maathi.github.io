@@ -13,6 +13,7 @@ function Footer() {
           <a
             href="https://twitter.com/kitsutsukix"
             target="_blank"
+            rel="noreferrer"
             className="twitter"
           >
             <FaTwitter />
@@ -22,13 +23,19 @@ function Footer() {
           <a
             href="https://github.com/maathi"
             target="_blank"
+            rel="noreferrer"
             className="github"
           >
             <FaGithubAlt />
           </a>
         </li>
         <li>
-          <a href="mailto:mahdi221b@gmail.com" target="_blank" className="mail">
+          <a
+            href="mailto:mahdi221b@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+            className="mail"
+          >
             <MdMail />
           </a>
         </li>
@@ -36,6 +43,7 @@ function Footer() {
           <a
             href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
             target="_blank"
+            rel="noreferrer"
             className="youtube"
           >
             <FaYoutube />

@@ -18,10 +18,26 @@ class Contact extends Form {
     message: Joi.string().min(24).required(),
   }
 
+  componentDidMount() {
+    this.visit()
+  }
+
   handleSubmit = (e) => {
     e.preventDefault()
     if (this.validateAll()) return
     this.send()
+  }
+
+  async visit() {
+    const res = await fetch("https://www.cloudflare.com/cdn-cgi/trace")
+    const text = await res.text()
+    await fetch("http://facteur.herokuapp.com/visit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ text }),
+    })
   }
 
   async send() {
