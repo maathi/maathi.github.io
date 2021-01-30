@@ -10,6 +10,7 @@
   font-size: 12px;
   color: gray;
   margin-bottom: 0;
+  line-height: 35px;
 }
 
 .rights > span {
@@ -56,4 +57,23 @@ ul.icons a:hover {
 
 .youtube:hover {
   color: #ff0000;
+}
+
+#heart {
+  width: 30px;
+  color: #bb001b;
+  margin-bottom: -2px;
+  animation-name: heart-beat;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes heart-beat {
+  from {
+    font-size: 15px;
+  }
+  to {
+    font-size: 20px;
+  }
 }

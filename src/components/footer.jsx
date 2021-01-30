@@ -1,12 +1,16 @@
 import "../style/footer.css"
 import { FaTwitter, FaGithubAlt, FaYoutube } from "react-icons/fa"
 import { MdMail } from "react-icons/md"
+import { GiHeartOrgan } from "react-icons/gi"
 
 function Footer() {
   return (
     <div className="footer">
       <p className="rights">
-        © All rights reserved. | Designed &amp; developed by <span>mathi</span>
+        © All rights reserved. | Designed &amp; developed with
+        <GiHeartOrgan id="heart" />
+        by &nbsp;
+        <span>mathi</span>
       </p>
       <ul className="icons">
         <li>
