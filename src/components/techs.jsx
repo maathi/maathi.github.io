@@ -1,22 +1,38 @@
 import "../style/techs.css"
-import react from "../img/react.png"
-import node from "../img/node.png"
-import graphql from "../img/graphql.png"
-import express from "../img/express.png"
-import mongo from "../img/mongodb.png"
-
+import { FaReact, FaNodeJs, FaHtml5 } from "react-icons/fa"
+import { SiPostgresql, SiGraphql, SiHtml5, SiCss3 } from "react-icons/si"
 function Techs() {
   return (
-    <div className="techs">
-      <h2>Some of my go-to technologies</h2>
+    <section id="techs">
+      <h2>Skills & Tools</h2>
       <div className="logos">
-        <img src={react} alt="React"></img>
-        <img src={node} alt="node"></img>
-        <img src={graphql} alt="graphql"></img>
-        <img src={express} alt="express"></img>
-        <img src={mongo} alt="mongodb"></img>
+        <div>
+          <SiPostgresql />
+          <p>Postgresql</p>
+        </div>
+
+        <div>
+          <FaNodeJs />
+          <p>Node Js</p>
+        </div>
+        <div>
+          <SiGraphql />
+          <p>GraphQl</p>
+        </div>
+        <div>
+          <FaReact />
+          <p>React Js</p>
+        </div>
+        <div>
+          <SiHtml5 />
+          <p>HTML 5</p>
+        </div>
+        <div>
+          <SiCss3 />
+          <p>CSS 3</p>
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
 
