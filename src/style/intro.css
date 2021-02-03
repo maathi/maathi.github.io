@@ -1,48 +1,119 @@
-.intro {
+#intro {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 3rem;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* gap: 3rem; */
   margin: 4rem auto;
 }
-
-.intro > p {
-  font-size: 1em;
+#intro > :first-child {
+  flex: 2;
+}
+#intro > :last-child {
+  flex: 3;
+}
+#intro > :last-child h1 {
+  font-size: 2.5rem;
+}
+#intro > :last-child p {
+  /* margin: auto; */
+  font-size: 1.2em;
+}
+#intro #card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 90%;
+  border-radius: 24px;
+  /* margin: auto; */
+  box-shadow: 0px 0px 18px 5px rgba(255, 0, 0, 0.7);
 }
 
-.intro > img {
+#card p {
+  font-size: 18px;
+  text-align: center;
+}
+
+#intro img {
+  margin-top: 2rem;
   border-radius: 50%;
-  width: 20%;
+  width: 40%;
   height: auto;
-  box-shadow: 0px 0px 34px 0 rgba(255, 0, 0, 1);
-}
-.intro > h4 {
-  width: 70%;
+  animation: glow 1s infinite alternate, rotation 12s infinite linear;
 }
 
+#wave {
+  display: inline-block;
+  animation-name: wave;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0px 0px 12px 1px rgba(255, 0, 0, 1);
+  }
+  to {
+    box-shadow: 0px 0px 34px 5px rgba(255, 0, 0, 1);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 @media screen and (max-width: 900px) {
-  .intro {
+  #intro {
     display: block;
     text-align: center;
   }
 
-  .intro > img {
+  #intro img {
     width: 30%;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .intro > img {
+  #intro img {
     width: 40%;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .intro > img {
+  #intro img {
     width: 50%;
   }
 
-  .intro > p {
+  #intro p {
     font-size: 20px;
   }
 }
