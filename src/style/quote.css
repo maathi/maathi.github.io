@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+#quote {
+  background-color: black;
+  text-align: center;
+  padding: 1.5rem 8rem;
+  font-family: "Courgette", cursive;
+}
+
+#quote > p {
+  margin: 0;
+  /* font-style: italic; */
+}
+#quote span {
+  color: red;
+}
+
+#quote > #author {
+  display: block;
+  float: right;
+  font-size: 14px;
+}
