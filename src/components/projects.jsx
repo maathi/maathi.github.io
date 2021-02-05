@@ -2,58 +2,75 @@ import "../style/projects.css"
 import brba from "../img/brba.jpg"
 import portfolio from "../img/portfolio.jpg"
 import arch from "../img/configs.png"
-import { FaGithub } from "react-icons/fa"
+import { FaExternalLinkAlt } from "react-icons/fa"
+
+import { FiGithub } from "react-icons/fi"
+import { Postgres, Node, Graphql, ReactIcon, Api, Jwt } from "./common/icons"
 
 function Projects() {
   let prjs = [
+    {
+      title: "Artist",
+      img: portfolio,
+      website: "https://maathi.github.io/artist",
+      github: "artist",
+      desc:
+        "Artist allows users to create nice paintings and share them with the world. the app is fully responsive and the design is built using pure CSS.",
+      tools: [<Postgres />, <Node />, <Graphql />, <Jwt />, <ReactIcon />],
+    },
     {
       title: "Br Ba cast",
       img: brba,
       website: "https://heisenberg-and-friends.herokuapp.com",
       github: "brba",
-      desc: "a samll app using breakingbadapi & React",
-    },
-    {
-      title: "My portfolio",
-      img: portfolio,
-      website: "#",
-      github: "portfolio",
-      desc: "this one :P",
-    },
-    {
-      title: "My Archlinux dot files",
-      img: arch,
-      website: "https://www.github.com/maathi/cute-dots",
-      github: "cute-dots",
-      desc: "My archlinux configuration",
+      desc:
+        "A very simple React app with hooks for displaying cast members from the Breaking Bad Tv show, the app consumes api from breakingbadapi.com and displays the results.",
+      tools: [<ReactIcon />, <Api />],
     },
   ]
 
   return (
-    <div className="projects">
+    <section id="projects">
       <h2>Small projects i've been working on lately</h2>
+
       <div className="prjs">
         {prjs.map((p) => (
           <div key={p.title} className="prj">
-            <div className="wrapper">
-              <a href={p.website} target="_blank" rel="noreferrer">
-                <img src={p.img} alt="Avatar"></img>
-              </a>
+            <div>
+              <div id="wrapper">
+                <a href={p.website} target="_blank" rel="noreferrer">
+                  <img src={p.img} alt="Avatar"></img>
+                </a>
+              </div>
             </div>
-            <b>{p.title}</b>
-            <p>{p.desc}</p>
-            <a
-              className="github-icon"
-              href={"https://github.com/maathi/" + p.github}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaGithub />
-            </a>
+            <div>
+              <h2>{p.title}</h2>
+              <p>{p.desc}</p>
+
+              <ul className="tools">
+                {p.tools?.map((t) => {
+                  return t
+                })}
+              </ul>
+
+              <ul className="links">
+                <a
+                  href={"https://github.com/maathi/" + p.github}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FiGithub />
+                </a>
+
+                <a href={p.website} target="_blank" rel="noreferrer">
+                  <FaExternalLinkAlt />
+                </a>
+              </ul>
+            </div>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 
