@@ -40,3 +40,33 @@
   box-shadow: 0px 0px 38px 12px rgba(255, 0, 0, 0.7);
   transition: 0.3s;
 }
+
+@media screen and (max-width: 560px) {
+  #techs .logos > * :first-child {
+    font-size: 3rem;
+    box-shadow: 0px 0px 8px 3px rgba(255, 0, 0, 0.7);
+  }
+}
+
+@media screen and (max-width: 430px) {
+  #techs .logos > * :first-child {
+    font-size: 2rem;
+    padding: 0.5rem 0.5rem;
+  }
+
+  #techs .logos > * > p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  #techs .logos > * :first-child {
+    font-size: 1.5rem;
+    padding: 0.5rem 0.5rem;
+  }
+
+  #techs .logos > * > p {
+    font-size: 12px;
+    color: yellow;
+  }
+}
