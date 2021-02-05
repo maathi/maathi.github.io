@@ -1,27 +1,23 @@
 .prjs {
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
   /* justify-content: space-around; */
   /* align-content: space-around; */
-
   /* column-gap: 1rem; */
-  row-gap: 2rem;
+  row-gap: 4rem;
+  margin: 3rem auto;
 }
 
 .prj {
-  /* width: 300px; */
-  /* text-align: center; */
-  align-items: center;
   display: flex;
+  align-items: center;
+  column-gap: 1rem;
 }
 
 .prj > :first-child {
-  /* border: 1px solid red; */
   flex: 2;
 }
 .prj > :last-child {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   /* row-gap: 1rem; */
@@ -29,17 +25,11 @@
 }
 
 #projects #wrapper {
+  margin: auto;
   width: 90%;
-  height: 400px;
   overflow: hidden;
   box-shadow: 0px 0px 18px 5px rgba(255, 0, 0, 0.7);
   border-radius: 24px;
-  transition: 0.6s;
-}
-
-#wrapper:hover {
-  box-shadow: 0px 0px 74px 0 rgba(255, 0, 0, 0.9);
-  transition: 0.6s;
 }
 
 img {
@@ -72,4 +62,16 @@ ul.links a:hover {
 ul.tools {
   display: flex;
   column-gap: 1rem;
+}
+
+@media screen and (max-width: 950px) {
+  .prj {
+    flex-direction: column;
+    row-gap: 1rem;
+    text-align: center;
+  }
+  ul.tools,
+  ul.links {
+    justify-content: center;
+  }
 }

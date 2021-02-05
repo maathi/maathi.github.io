@@ -1,7 +1,7 @@
 import "../style/projects.css"
 import brba from "../img/brba.jpg"
-import portfolio from "../img/portfolio.jpg"
-import arch from "../img/configs.png"
+import screenshot from "../img/screenshot.png"
+import screenshot2 from "../img/screenshot2.png"
 import { FaExternalLinkAlt } from "react-icons/fa"
 
 import { FiGithub } from "react-icons/fi"
@@ -11,7 +11,7 @@ function Projects() {
   let prjs = [
     {
       title: "Artist",
-      img: portfolio,
+      img: screenshot,
       website: "https://maathi.github.io/artist",
       github: "artist",
       desc:
@@ -20,7 +20,7 @@ function Projects() {
     },
     {
       title: "Br Ba cast",
-      img: brba,
+      img: screenshot2,
       website: "https://heisenberg-and-friends.herokuapp.com",
       github: "brba",
       desc:
