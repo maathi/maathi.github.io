@@ -12,7 +12,7 @@ function Projects() {
     {
       title: "Artist",
       img: screenshot,
-      website: "https://maathi.github.io/artist",
+      website: "https://a-r-t-i-s-t.herokuapp.com/",
       github: "artist",
       desc:
         "Artist allows users to create nice paintings and share them with the world. the app is fully responsive and the design is built using pure CSS.",
@@ -36,13 +36,13 @@ function Projects() {
       <div className="prjs">
         {prjs.map((p) => (
           <div key={p.title} className="prj">
-            <div>
-              <div id="wrapper">
-                <a href={p.website} target="_blank" rel="noreferrer">
-                  <img src={p.img} alt="Avatar"></img>
-                </a>
-              </div>
+            {/* <div> */}
+            <div id="wrapper">
+              <a href={p.website} target="_blank" rel="noreferrer">
+                <img src={p.img} alt="Avatar"></img>
+              </a>
             </div>
+            {/* </div> */}
             <div>
               <h2>{p.title}</h2>
               <p>{p.desc}</p>
