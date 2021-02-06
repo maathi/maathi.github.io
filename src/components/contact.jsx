@@ -54,7 +54,7 @@ class Contact extends Form {
 
   render() {
     return (
-      <div className="contact">
+      <section className="contact">
         <h2>Contact</h2>
         <form>
           <input
@@ -107,7 +107,7 @@ class Contact extends Form {
             couldn't send message!
           </p>
         </div>
-      </div>
+      </section>
     )
   }
 }
