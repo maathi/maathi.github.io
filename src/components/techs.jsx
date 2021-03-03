@@ -1,35 +1,70 @@
 import "../style/techs.css"
-import { FaReact, FaNodeJs, FaHtml5 } from "react-icons/fa"
-import { SiPostgresql, SiGraphql, SiHtml5, SiCss3 } from "react-icons/si"
+import {
+  Postgres,
+  Mongodb,
+  Firebase,
+  Node,
+  Graphql,
+  ExpressLg,
+  ReactIcon,
+  Redux,
+  Html,
+  Css,
+  Sass,
+  Docker,
+} from "./common/icons"
 function Techs() {
   return (
     <section id="techs">
       <h2>Skills & Tools</h2>
       <div className="logos">
         <div>
-          <SiPostgresql />
+          <Postgres />
           <p>Postgresql</p>
         </div>
-
         <div>
-          <FaNodeJs />
+          <Mongodb />
+          <p>MongoDB</p>
+        </div>
+        <div>
+          <Firebase />
+          <p>Firebase</p>
+        </div>
+        <div>
+          <Node />
           <p>Node Js</p>
         </div>
         <div>
-          <SiGraphql />
+          <Graphql />
           <p>GraphQl</p>
         </div>
         <div>
-          <FaReact />
+          <ExpressLg />
+          <p>Express</p>
+        </div>
+        <div>
+          <ReactIcon />
           <p>React Js</p>
         </div>
         <div>
-          <SiHtml5 />
+          <Redux />
+          <p>Redux</p>
+        </div>
+        <div>
+          <Html />
           <p>HTML 5</p>
         </div>
         <div>
-          <SiCss3 />
+          <Css />
           <p>CSS 3</p>
+        </div>
+        <div>
+          <Sass />
+          <p>Sass</p>
+        </div>
+        <div>
+          <Docker />
+          <p>Docker</p>
         </div>
       </div>
     </section>

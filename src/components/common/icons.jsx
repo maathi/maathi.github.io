@@ -8,6 +8,8 @@ import {
   SiMongodb,
   SiRedux,
   SiSass,
+  SiFirebase,
+  SiDocker,
 } from "react-icons/si"
 import { AiFillApi } from "react-icons/ai"
 function Postgres() {
@@ -53,6 +55,14 @@ function Redux() {
 function Sass() {
   return <SiSass style={{ color: "#CD6799" }} title="Sass" />
 }
+
+function Firebase() {
+  return <SiFirebase style={{ color: "#FFA611" }} title="Firebase" />
+}
+
+function Docker() {
+  return <SiDocker style={{ color: "#0db7ed" }} title="Docker" />
+}
 function Express() {
   return (
     <span
@@ -61,6 +71,25 @@ function Express() {
         fontWeight: "200",
         fontSize: "22px",
         cursor: "default",
+      }}
+      title="Express"
+    >
+      ex
+    </span>
+  )
+}
+
+function ExpressLg() {
+  return (
+    <span
+      style={{
+        display: "block",
+        fontWeight: "100",
+        cursor: "default",
+        height: "100px",
+        width: "100px",
+        color: "grey",
+        lineHeight: "90px",
       }}
       title="Express"
     >
@@ -80,5 +109,8 @@ export {
   Mongodb,
   Redux,
   Express,
+  ExpressLg,
   Sass,
+  Firebase,
+  Docker,
 }
