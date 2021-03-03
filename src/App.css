@@ -1,11 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 body {
   margin: 0 0;
   background-color: rgb(1, 0, 53);
   color: white;
-  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", sans-serif;
 }
 
 .main-content {
@@ -23,4 +21,8 @@ section {
 ul {
   list-style-type: none;
   padding: 0;
+}
+
+button {
+  font-family: "Roboto";
 }

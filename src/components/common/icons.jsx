@@ -5,6 +5,9 @@ import {
   SiHtml5,
   SiCss3,
   SiJsonwebtokens,
+  SiMongodb,
+  SiRedux,
+  SiSass,
 } from "react-icons/si"
 import { AiFillApi } from "react-icons/ai"
 function Postgres() {
@@ -38,4 +41,44 @@ function Api() {
 function Jwt() {
   return <SiJsonwebtokens style={{ color: "#dddddd" }} title="jwt" />
 }
-export { Postgres, Node, Graphql, ReactIcon, Html, Css, Api, Jwt }
+
+function Mongodb() {
+  return <SiMongodb style={{ color: "#4DB33D" }} title="MongoDB" />
+}
+
+function Redux() {
+  return <SiRedux style={{ color: "#764abc" }} title="Redux" />
+}
+
+function Sass() {
+  return <SiSass style={{ color: "#CD6799" }} title="Sass" />
+}
+function Express() {
+  return (
+    <span
+      style={{
+        lineHeight: "16px",
+        fontWeight: "200",
+        fontSize: "22px",
+        cursor: "default",
+      }}
+      title="Express"
+    >
+      ex
+    </span>
+  )
+}
+export {
+  Postgres,
+  Node,
+  Graphql,
+  ReactIcon,
+  Html,
+  Css,
+  Api,
+  Jwt,
+  Mongodb,
+  Redux,
+  Express,
+  Sass,
+}
