@@ -68,7 +68,7 @@ function Express() {
     <span
       style={{
         lineHeight: "16px",
-        fontWeight: "200",
+        fontWeight: "100",
         fontSize: "22px",
         cursor: "default",
       }}
@@ -86,10 +86,8 @@ function ExpressLg() {
         display: "block",
         fontWeight: "100",
         cursor: "default",
-        height: "100px",
-        width: "100px",
         color: "grey",
-        lineHeight: "90px",
+        lineHeight: 1,
       }}
       title="Express"
     >
