@@ -32,7 +32,7 @@ function Projects() {
       img: junkzoneScreenshot,
       website: "https://junkzone.netlify.com",
       github: "junkzone",
-      desc: "An E-commerce website built with with MERN stack.",
+      desc: "An E-commerce website built with MERN stack.",
       tools: [
         <Mongodb />,
         <Node />,
@@ -84,7 +84,13 @@ function Projects() {
           </div>
         ))}
       </div>
-      <button>Find more on github</button>
+      <button
+        onClick={() => {
+          window.open("https://github.com/maathi/")
+        }}
+      >
+        Find more on github
+      </button>
     </section>
   )
 }
