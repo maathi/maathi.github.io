@@ -1,8 +1,9 @@
 import "../style/projects.css"
 import artzScreenshot from "../img/artz-screenshot.png"
 import junkzoneScreenshot from "../img/junkzone-screenshot.png"
+import horuScreenshot from "../img/horu-screenshot.png"
 import { FaExternalLinkAlt } from "react-icons/fa"
-
+import { AiFillSetting } from "react-icons/ai"
 import { FiGithub } from "react-icons/fi"
 import {
   Postgres,
@@ -14,6 +15,8 @@ import {
   Redux,
   Express,
   Sass,
+  Typescript,
+  Css,
 } from "./common/icons"
 
 function Projects() {
@@ -24,8 +27,15 @@ function Projects() {
       website: "https://artz.netlify.com/",
       github: "artz",
       desc:
-        "Artz allows users to create nice paintings and share them with the world. The design is built using pure CSS.",
-      tools: [<Postgres />, <Node />, <Graphql />, <Jwt />, <ReactIcon />],
+        "Artz allows users to create nice paintings using Canvas API and share them with the world.",
+      tools: [
+        <Postgres />,
+        <Node />,
+        <Graphql />,
+        <Jwt />,
+        <ReactIcon />,
+        <Css />,
+      ],
     },
     {
       title: "Junkzone",
@@ -40,6 +50,27 @@ function Projects() {
         <Jwt />,
         <ReactIcon />,
         <Redux />,
+        <Sass />,
+      ],
+    },
+    {
+      title: (
+        <>
+          Horu [still in progress]{" "}
+          <AiFillSetting style={{ color: "#edda05" }}></AiFillSetting>
+        </>
+      ),
+      img: horuScreenshot,
+      website: "",
+      github: "horu-api",
+      desc:
+        "Horu (who are you) is an app that allows you to know who visited your website by showing you informations about them such as geolocation. It can also provide you with some statistics via charts about the number of visits to your website.",
+      tools: [
+        <Postgres />,
+        <Node />,
+        <Express />,
+        <ReactIcon />,
+        <Typescript />,
         <Sass />,
       ],
     },
